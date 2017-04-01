@@ -1,0 +1,329 @@
+* 
+{
+	margin:0;
+	padding:0;
+}
+
+body 
+{
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background-color: #d9d5d2; 
+	margin:25px 0 4px 0;
+	color:#333333; 
+}
+
+img 
+{
+	border:0;
+}
+
+p 
+{
+	margin-bottom:20px;
+	line-height:20px;
+}
+
+ul
+{
+	margin-top:5px;
+	margin-bottom:15px;
+	margin-left:30px;
+}
+ul.multi-line li{
+	padding-bottom:4px;	
+}
+
+table.example tr{
+	background-color:#F4F4F4;
+}
+
+table.example tr.totalRow{
+	background-color:#E5E6E8;
+}	
+
+#products ul
+{
+	margin-left:20px;
+	font-size:14px;
+}
+
+#productsblurb
+{
+	font-size:14px;
+}
+
+#blurb
+{
+ font-size:14px;
+ font-weight:bold;
+}
+
+
+#subtext
+{
+	font-size:10px;
+	color:#000000;
+}
+
+
+/* Structure */
+#wrapper 
+{
+	width:820px;
+	margin:0 auto;
+}
+	
+#top
+{
+	height:15px;
+	background-image:url(images/bg-top.gif);
+	background-repeat:no-repeat;
+}
+		
+#header 
+{
+	height:89px;
+	line-height:100px;
+	background-image:url(images/colourbanner.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	padding-left:25px;
+	background-color:#FFFFFF;
+}
+
+#content 
+{
+	background-color:#FFFFFF;
+	background-position:top center;
+	padding:10px 10px;
+	overflow: hidden;
+	display: block;
+	width: 97.6%;
+}
+
+#navcontent
+{
+	display:block;
+	position: relative;
+	width: 190px;
+	float: left;
+	padding-left:10px;
+}
+
+#maincontent
+{
+	display:block;
+	background-color: #FFFFFF;
+	position: relative;
+	width: 560px;
+	float: right;
+	padding-right:20px;
+	font-size:15px;
+	color: #7A7A7A;
+}
+
+#maincontent p
+{
+	text-align:justify;
+}
+
+#maincontent table
+{
+	margin-left:8px;
+}
+
+#footer 
+{
+	text-align:right;
+	background-image:url(images/bg-footer.gif);
+	background-repeat:no-repeat;
+	background-position:top center;
+	line-height:24px;
+	color:black;
+}
+
+/* Headings */
+h1 {
+	font-size:42px;
+	font-weight:normal;
+	letter-spacing:-1px;
+	margin-top: 20px;
+	margin-bottom:13px;
+	}
+
+/* Link Colors */
+
+	h1 a {
+		color:#fff;
+		text-decoration:none;
+		}
+	h1 a:hover {
+	color:#fff;
+	}
+
+	#tabletext
+	{
+		font-size:16px;
+		color:#000000;
+	}
+
+	#navcontent a 
+	{
+		color: #0000FF;
+		text-decoration:none;
+		font-weight:bold;
+	}
+
+	#maincontent a 
+	{
+		color: #0000FF;
+		text-decoration:none;	
+	}
+	#maincontent a:hover 
+	{
+		color:#0000FF;
+		text-decoration:underline;
+	}
+	
+	
+
+	#footer a {
+		color:#ffffff;
+		text-decoration:none;
+		border-bottom:1px dotted #ffffff;
+		}
+	#footer a:hover {
+		color:#ffffff;
+		}
+	
+	#prodtitle
+	{
+		font-size:18px;
+		font-weight:bold;
+	}
+	
+
+    #navcontent ul 
+	{
+		margin:0;
+		padding-top:7px;
+		padding-bottom:0px;
+		padding-left:0px;
+		padding-right:0px;
+	  	list-style:none;
+    }
+
+	#navcontent li 
+	{
+		width:188px;
+		height:33px;
+      	margin:0;
+		padding-top:2px;
+		padding-bottom:2px;
+		padding-left:0px;
+		padding-right:0px;				
+     }
+	  
+    #navcontent a 
+	{
+		width:188px;
+		height:33px;
+      	text-decoration:none;
+		background:url(images/navigation/nav_link.jpg);
+		display:block;
+		line-height:23pt;
+      }
+
+    #navcontent a span 
+	{
+		width:188px;
+		height:33px;
+    	display:block;
+      	background:url(images/navigation/nav_link.jpg);
+		color: #FFFFFF;
+		font-size:15px;
+		text-indent:17px;
+		text-transform:uppercase;
+    }
+
+	#navcontent li.selectedsub{
+		padding-bottom:0;
+		
+	}
+	
+	#navcontent li.submenu{
+		padding:0 0;	
+	}
+	
+	#navcontent li.submenu-mid{
+		border-top: thin #B8B8B8 dashed;
+		border-bottom: thin #B8B8B8 dashed;
+	}
+	
+	#navcontent li.submenu a
+	{
+		width:188px;
+		height:33px;
+      	text-decoration:none;
+		background-color:#b8b8b8;
+		background-image:none;
+		display:block;
+		line-height:23pt;
+		
+    }
+	
+	#navcontent li.submenu a span
+	{
+		background-color:#b8b8b8;
+		background-image:none;		
+		text-transform:none;
+		font-weight:normal;
+		text-indent:30px;
+		font-size:13px;
+	}
+	
+	
+	
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #navcontent a span {float:none;}
+    /* End IE5-Mac hack */
+      
+	#navcontent a:hover 
+	{
+     	background-position: 0 33px;
+		text-decoration:none;
+		cursor: pointer;
+    }
+    
+	 #navcontent a:hover span, #navcontent a#activetab span
+    { 
+		background-position: 0 33px; 
+	}
+      
+	#navcontent a:link#activetab, #navcontent a:visited#activetab, #navcontent a:hover
+    { 
+		background-position: 0 33px;
+	}
+
+	#navcontent li.submenu a:hover span, #navcontent li.submenu a#submenu-activetab span
+	{
+		text-decoration:none;
+		color:#ffffff;
+		cursor: pointer;
+		background-image:url(images/navigation/highlight_leaf.gif);
+		background-repeat:no-repeat;
+		background-position:left;
+    }
+	
+	.sup
+	{
+		font-size:12px;
+		vertical-align: text-top;
+	}
+	
+	#starred
+	{
+		font-size:12px;
+	}
+	

@@ -1,0 +1,101 @@
+form {font-size: 90%;}
+
+.results_table, .finalSavingsTable table {
+	width: 470px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+h3
+{
+	text-indent: 10px;
+	padding-bottom:10px;
+}
+
+
+.odd 	{ background: #e5e6e8; }
+
+
+tr, th, td {
+	border: 0;
+	padding: 4px;
+	margin: 0;
+	height: 15px;
+	}
+
+.results_table {
+		padding: 0;
+		margin: 0;
+		}
+/**/
+
+
+.standard
+{
+	background: #e5e6e8;
+	color: #222;
+}
+		 
+.savings
+{
+	background: #C2C3C4;
+	color: #222;	 
+}	
+	
+
+
+.a 		{
+		background: #f4f4f4;
+		width: 110px;
+		}
+
+.b 		{
+		background: #f4f4f4;
+		text-align: right;
+		width: 100px;
+		}
+
+.c		{
+		background: #f4f4f4;
+		text-align: right;
+		width: 105px;
+		font-weight: bold;
+		color: #000000;
+		}
+		
+.d 		{
+		background: #f4f4f4;
+		width: 110px;
+		}
+
+.e 		{
+		background: #f4f4f4;
+		text-align: right;
+		width: 90px;
+		}
+
+.f 		{
+		background: #f4f4f4;
+		text-align: right;
+		width: 90px;
+		font-weight: bold;
+		color: #000000;
+
+		}
+		
+.tpc
+{
+	height: 25px;
+}
+
+.finalSavingsTable
+{
+	font-weight:bold;
+	border: none;
+	background: #e5e6e8;
+	width: 400px;
+}
+		
+#FiveYearSavings, #FiveYearReturn {text-align: left;}
+

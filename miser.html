@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Euro Payment Systems</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="calc_style.css" />
+	<script type="text/javascript" src="scripts/calc.js"></script>
+
+</head>
+
+<body>
+	<div id="wrapper" >
+		<div id="top"></div>
+		<div id="header"></div> <!-- end header div -->
+		<div id="content">	
+			<div id="navcontent">
+				<img width="187px" src="images/title_pics/trees	.jpg"/>
+				<ul>
+					<li><a href="index.html" title="Welcome"><span>Welcome</span></a></li>
+					
+                    <li class="selectedsub">
+                    	<a href="miser.html" title="Miser" id="activetab">
+                    		<span>Energy Management</span>                                                        
+                        </a>
+                    </li>
+                    <li class="submenu">
+                        <a href="vendingmiser/index.html">
+                            <span>VendingMiser</span>
+                        </a>
+                    </li>
+                    <li class="submenu submenu-mid">
+                        <a href="coolermiser/index.html">
+                            <span>CoolerMiser</span>
+                        </a>
+                     </li>
+                     <li class="submenu">
+                        <a href="plugmiser/index.html">
+                           <span>PlugMiser</span>
+                        </a>
+                    </li>					
+					<li><a href="roulette.html" title="Roulette"><span>Roulette Machines</span></a></li>
+					<li><a href="racing.html" title="Racing"><span>Virtual Racing</span></a></li>
+					<li><a href="components.html" title="Components"><span>Components</span></a></li>
+					<li><a href="links.html" title="Links"><span>Links</span></a></li>
+					<li><a href="contact.html" title="Contact"><span>Contact Us</span></a></li>
+			  </ul>	
+			</div>
+			<div id="maincontent" >
+
+				<h1>Energy Management</h1>
+				<div>
+
+<p>
+Save up to 50% on your energy bills and cut greenhouse gas emissions by reducing the energy required to run your vending machines, glass fronted refrigerators and electronic equipment.  
+</p>
+
+<p>
+Using our motion sensing technology,  energy control products can start saving energy in five minutes, improve your carbon footprint and prolong the life of your machines at the same time! 
+</p>
+<p>
+We offer a variety of Energy Misers, each engineered to suit specific applications to ensure the best possible energy saving is achieved..
+</p>
+
+<p>
+<h4>VendingMiser for vending machines </h4>
+Using VendingMiser you can save up to 50% of your energy bills, extend the life of your vending machines, and make their daily energy performance comparable to new US ENERGY STAR qualified machines!
+<br/>
+<a href="vendingmiser/index.html">find out more>></a>
+</p> 
+
+<p>
+<h4>CoolerMiser for glass fronted refrigerators </h4>
+Using CoolerMiser you can save 30% of your energy bills, reduce your carbon footprint and extend the life of your glass fronted refrigerators 
+<br/>
+<a href="coolermiser/index.html">find out more>></a>
+</p>
+
+<p>
+<h4>PlugMiser for electronic equipment </h4>
+Using PlugMiser you can save up to 60% of your energy bills, in a typical office, when running your electronic equipment (such as non-refrigerated snack machines, hot vending machines, copiers, laminators and lighting) by automatically turning off equipment which we should all switch off at the end of the day but often forget.
+<br/>
+<a href="plugmiser/index.html">find out more>></a>
+</p>
+<br/>
+<br/>
+<br/>
+<br/>
+
+			</div>
+							
+				<div id="calc">
+				<h2>Savings Calculator</h2>										
+					<p>Please replace the default values in the table below with your location's unique information and then click on the "calculate savings" button.</p>
+					
+					<form name="frmMain" id="frmMain" action="">
+					<table>
+					<tr class="odd">
+						<td class="input">Energy Costs (&pound; per kWh)</td><td><input type="text" size="8" id="txtEnergyCosts" value="0.080" onkeypress="checkKey()" /></td>
+					</tr>
+					<tr class="even">
+						<td class="input">Facility Occupied Hours per Week</td><td><input type="text" size="8" id="txtOccupiedHours" value="75" onkeypress="checkKey()" /></td>
+						</tr>
+						<tr class="odd">
+							<td class="input">Number of Cold Drink Vending Machines</td><td><input type="text" size="8" id="txtNumColdMachines" value="4" onkeypress="checkKey()" /></td>
+					
+						</tr>
+						<tr class="even">
+							<td class="input">Number of Non-refrigerated Snack Machines</td><td><input type="text" size="8" id="txtNumSnackMachines" value="2" onkeypress="checkKey()" /></td>
+						</tr>
+						<tr class="odd">
+							<td class="input">Power Requirements of Cold Drink Machine (Watts; 500 typical)</td><td><input type="text" size="8" id="txtPowerCold" value="500" onkeypress="checkKey()" /></td>
+						</tr>
+						<tr class="even">
+					
+							<td class="input">Power Requirements of Snack Machine (Watts; 90 typical)</td><td><input type="text" size="8" id="txtPowerSnack" value="90" onkeypress="checkKey()" /></td>
+						</tr>
+						<tr class="odd">
+							<td class="input">VendingMiser<span class="sup">&reg;</span> Sale Price (for cold drink machines) (&pound;'s)</td><td><input type="text" size="8" id="txtVendingMiserPrice" value="150.00" onkeypress="checkKey()" /></td>
+						</tr>
+						<tr class="even">
+							<td class="input">PlugMiser Sale Price (for snack machines) (&pound;'s)</td><td><input type="text" size="8" id="txtSnackMiserPrice" value="75.00" onkeypress="checkKey()" /></td>
+					
+						</tr>
+						
+						<tr>
+							<td colspan="2" style="padding: 1px; height: 30px; text-align: right" >
+								<input type="button" value="Calculate Savings!" onclick="StartAnalysisb()" />	
+							</td>
+						</tr>
+					</table>
+					
+					<table><tr height="30px"><td></td></tr></table>		
+					
+					<h3>Projected savings with VendingMiser<span class="sup">&reg;</span> installed:</h3>
+					
+					<table class="results_table">
+							<tr>
+								<th class="standard">COLD DRINK MACHINES</th>
+								<th class="standard">Current</th>
+								<th class="standard">Projected</th>
+					
+								<th class="savings">Total Savings</th>
+								<th class="savings">% Savings</th>
+							</tr>
+							<tr>
+								<td class="a">kWh</td>
+								<td class="b" id="kWhBeforeCold"></td>
+								<td class="b" id="kWhAfterCold"></td>
+					
+								<td class="c" id="kWhSavingsCold"></td>
+								<td class="c" id="EnergySavingsCold"></td>
+					
+							</tr>
+							<tr>
+								<td class="d">Cost of Operation</td>
+								<td class="e" id="CostBeforeCold"></td>
+								<td class="e" id="CostAfterCold"></td>
+								<td class="f" id="CostSavingsCold"></td>
+					
+								<td class="f" id="pCostSavingsCold"></td>
+					
+							</tr>
+					</table>
+					<table><tr height="30px"><td></td></tr></table>
+					<table class="results_table">
+							<tr>
+								<th class="standard">SNACK MACHINES</th>
+								<th class="standard">Current</th>
+								<th class="standard">Projected</th>
+								<th class="savings">Total Savings</th>
+								<th class="savings">% Savings</th>
+							</tr>
+							<tr>
+								<td class="a">kWh</td>
+								<td class="b" id="kWhBeforeSnack"></td>
+								<td class="b" id="kWhAfterSnack"></td>
+					
+								<td class="c" id="kWhSavingsSnack"></td>
+								<td class="c" id="EnergySavingsSnack"></td>
+					
+							</tr>
+							<tr>
+								<td class="d">Cost of Operation</td>
+								<td class="e" id="CostBeforeSnack"></td>
+								<td class="e" id="CostAfterSnack"></td>
+								<td class="f" id="CostSavingsSnack"></td>
+					
+								<td class="f" id="pCostSavingsSnack"></td>
+					
+							</tr>
+					</table>
+					<table><tr height="30px"><td></td></tr></table>
+					<p><h3>Total Annual Savings</h3></p>
+					
+					<table class="results_table">
+							<tr>
+								<th class="standard">&nbsp;</th>
+								<th class="standard">Current</th>
+					
+								<th class="standard">Projected</th>
+								<th class="savings">Total Savings</th>
+								<th class="savings">% Savings</th>
+							</tr>
+							<tr>
+								<td class="a">kWh</td>
+								<td class="b" id="PresentkWh"></td>
+					
+								<td class="b" id="ProjectedkWh"></td>
+								<td class="c" id="kWhSavings"></td>
+								<td class="c" id="PercentkWhSavings"></td>
+					
+							</tr>
+							<tr>
+								<td class="d">Cost of Operation</td>
+								<td class="e" id="PresentCost"></td>
+								<td class="e" id="ProjectedCost"></td>
+					
+								<td class="f" id="AnnualSavings"></td>
+								<td class="f" id="PercentSavings"></td>
+					
+							</tr>
+					</table>
+					
+					<table><tr height="30px"><td></td></tr></table>
+					
+						<table class="results_table">
+							<tr>
+								<th class="standard">Total Project Cost&nbsp;&nbsp;</th>
+								<th class="standard">Break Even (Months)</th>
+					
+							</tr>
+							<tr class="tpc">
+								<td class="a" id="TotalProjectCost" style="text-align: center;"></td>
+								<td class="b" id="BreakEven" style="text-align: center;"></td>
+							</tr>
+						</table>
+					
+					<table><tr height="30px"><td></td></tr></table>
+					
+					<table class="finalSavingsTable">
+							<tr>
+								<td class="strong">Estimated Five Year Savings on ALL Machines = <span id="FiveYearSavings"></span></td>	
+							</tr>
+							<tr>
+								<td class="strong">Estimated Five Year Return on Investment = <span id="FiveYearReturn"></span></td>
+							</tr>
+						</table>
+					
+					</form>
+				</div>
+			</div>
+		</div> 	<!-- end content div -->
+		<div id="footer">
+			<br/>
+			 2009 www.europaymentsystems.co.uk | Site by J&T Design
+		</div>
+	</div> <!-- end wrapper div -->
+
+    <!-- google analytics -->
+    <script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-4312747-1");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+	</script>
+
+</body>
+</html>
